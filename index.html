@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Currículo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🧾 Criador de Currículo</h1>
+    <p>Preencha os dados e veja seu currículo em tempo real</p>
+  </header>
+
+  <main class="container">
+    <!-- FORMULÁRIO -->
+    <section class="formulario">
+      <h2>Dados Pessoais</h2>
+
+      <input type="text" id="nome" placeholder="Nome completo">
+      <input type="text" id="cargo" placeholder="Cargo desejado">
+      <input type="text" id="email" placeholder="Email">
+      <input type="text" id="telefone" placeholder="Telefone">
+
+      <h2>Resumo Profissional</h2>
+      <textarea id="resumo" placeholder="Fale um pouco sobre você"></textarea>
+
+      <h2>Experiência</h2>
+      <textarea id="experiencia" placeholder="Ex: Empresa, cargo, atividades"></textarea>
+
+      <h2>Formação</h2>
+      <textarea id="formacao" placeholder="Curso, instituição, ano"></textarea>
+
+      <h2>Habilidades</h2>
+      <textarea id="habilidades" placeholder="Ex: Comunicação, .NET, CFTV"></textarea>
+    </section>
+
+    <!-- CURRÍCULO -->
+    <section class="curriculo">
+      <div class="card">
+        <h1 id="cv-nome">Seu Nome</h1>
+        <h3 id="cv-cargo">Cargo desejado</h3>
+
+        <p><strong>Email:</strong> <span id="cv-email"></span></p>
+        <p><strong>Telefone:</strong> <span id="cv-telefone"></span></p>
+
+        <hr>
+
+        <h2>Resumo</h2>
+        <p id="cv-resumo"></p>
+
+        <h2>Experiência</h2>
+        <p id="cv-experiencia"></p>
+
+        <h2>Formação</h2>
+        <p id="cv-formacao"></p>
+
+        <h2>Habilidades</h2>
+        <p id="cv-habilidades"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

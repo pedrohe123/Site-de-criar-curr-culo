@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  min-height: 100vh;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.formulario {
+  width: 45%;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: slideLeft 1s ease;
+}
+
+.formulario h2 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #c33764;
+  box-shadow: 0 0 8px rgba(195,55,100,0.4);
+}
+
+.curriculo {
+  width: 55%;
+  animation: slideRight 1s ease;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.card h1 {
+  color: #1d2671;
+}
+
+.card h3 {
+  color: #c33764;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin-top: 15px;
+  color: #1d2671;
+}
+
+hr {
+  margin: 15px 0;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
